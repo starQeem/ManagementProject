@@ -75,7 +75,7 @@ public class StudentInfoController {
 	@PostMapping("/update")
 	@RequiresPermissions("student:studentInfo:edit")
 	public R update(StudentInfoDO studentInfo){
-		studentInfoService.update(studentInfo);
+		studentInfoService.update(studentInfo);//
 		return R.ok();
 	}
 
